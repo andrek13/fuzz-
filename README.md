@@ -7,19 +7,19 @@ Usage
 Help
 To display the script's help information, use the following command:
 
-./fuzz.sh -h
+```./fuzz.sh -h```
 
 
 Fuzzing URL
 To start fuzzing at a specific URL, use the -u parameter. The URL must include the keyword "FUZZ," which will be replaced during fuzzing. This parameter is mandatory, except when displaying help.
 
-./fuzz.sh -u https://example.com/FUZZ.php
+```./fuzz.sh -u https://example.com/FUZZ.php```
 
 
 Custom Dictionary
 You can specify a custom dictionary file using the optional -w switch. The dictionary file should contain words, with each word on a separate line.
 
-./fuzz.sh -u https://example.com/FUZZ.php -w /path/to/custom/dictionary.txt
+```./fuzz.sh -u https://example.com/FUZZ.php -w /path/to/custom/dictionary.txt```
 
 
 Positive Response Codes
