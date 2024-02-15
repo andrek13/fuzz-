@@ -25,4 +25,4 @@ You can specify a custom dictionary file using the optional -w switch. The dicti
 Positive Response Codes
 The optional -c switch allows you to define return codes considered as positive server responses. By default, only the code 200 is considered positive.
 
-./fuzz.sh -u https://example.com/FUZZ.php -c 200,301,404
+```./fuzz.sh -u https://example.com/FUZZ.php -c 200,301,404```
