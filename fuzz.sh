@@ -21,13 +21,11 @@ while getopts ":hu:w:c:" opt; do
 		\?) echo "Invalid option: -$OPTARG" help;;
 	esac
 done
-echo "$n_dictionary"
 
 if [ -z "$url" ]; then
 	echo "Error: URL must be provided"
 	exit
 fi
-#echo "lolol"
 
 if [ -z "$codes" ]; then
 	codes=200;
@@ -38,8 +36,6 @@ if [ -z "$n_dictionary" ]; then
 else
 	dictionary=$(cat "$n_dictionary")
 fi
-
-echo "$dictionary"
 
 echo "$dictionary" | while IFS= read -r word; do
 	new_url=$(echo "$url" | sed "s/FUZZ/$word/")
